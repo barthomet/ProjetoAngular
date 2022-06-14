@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, Input, OnInit } from '@angular/core';
 import { Usuario } from 'src/app/usuario';
 
 @Component({
@@ -9,15 +9,12 @@ import { Usuario } from 'src/app/usuario';
 export class UsuarioCadastroComponent implements OnInit {
 
   public usuario:Usuario = new Usuario()
+  usuarioService: any;
   constructor() { }
+
+  
 
   ngOnInit(): void {
   }
-
-  public salvar(){
-      console.log(this.usuario)
-    alert("salvo com sucesso")
-  }
-  
 
 }
