@@ -12,8 +12,6 @@ export class UsuarioCadastroComponent implements OnInit {
   usuarioService: any;
   constructor() { }
 
-  
-
   ngOnInit(): void {
   }
 
